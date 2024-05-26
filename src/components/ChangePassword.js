@@ -30,7 +30,7 @@ function ChangePassword() {
   };
 
   return (
-    <div>
+    <div className="change-password">
       <h2>Change Password</h2>
       <form onSubmit={handleSubmit}>
         <label>

@@ -76,49 +76,48 @@ function Calendar() {
       });
       window.location.reload();
   };
-
-  return (
-    <div>
-      <h2>Car Rental Calendar</h2>
-      {currUser && currUser.rentedCars && (
-        <>
-          <h3>Your Rentals</h3>
-          <ul>
-            {currUser.rentedCars.map((rental, index) => (
-              <li key={index}>
-                {rental.car} on {rental.date} for {rental.cost} USD
-                <button onClick={() => handleCancel(rental.date, rental.cost)}>Cancel</button>
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
-      {currUser && (
-        <>
-          <h3>Rent a Car</h3>
-          <p>Your balance: {balance}</p>
-          <input
-            type="text"
-            placeholder="Car"
-            value={car}
-            onChange={(e) => setCar(e.target.value)}
-          />
-          <input
-            type="date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-          />
-          <input
-            type="number"
-            placeholder="Cost"
-            value={cost}
-            onChange={(e) => setCost(e.target.value)}
-          />
-          <button onClick={handleRent}>Rent</button>
-        </>
-      )}
-    </div>
-  );
-}
+    return (
+      <div className="calendar">
+        <h2>Car Rental Calendar</h2>
+        {currUser && currUser.rentedCars && (
+          <>
+            <h3>Your Rentals</h3>
+            <ul>
+              {currUser.rentedCars.map((rental, index) => (
+                <li key={index}>
+                  {rental.car} on {rental.date} for {rental.cost} USD
+                  <button onClick={() => handleCancel(rental.date, rental.cost)}>Cancel</button>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+        {currUser && (
+          <>
+            <h3>Rent a Car</h3>
+            <p>Your balance: {balance}</p>
+            <input
+              type="text"
+              placeholder="Car"
+              value={car}
+              onChange={(e) => setCar(e.target.value)}
+            />
+            <input
+              type="date"
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+            />
+            <input
+              type="number"
+              placeholder="Cost"
+              value={cost}
+              onChange={(e) => setCost(e.target.value)}
+            />
+            <button onClick={handleRent}>Rent</button>
+          </>
+        )}
+      </div>
+    );
+  }
 
 export default Calendar;

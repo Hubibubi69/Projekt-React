@@ -31,7 +31,7 @@ function Register() {
   };
 
   return (
-    <div>
+    <div className="register">
       <h2>Register</h2>
       <form onSubmit={handleSubmit}>
         <label>
@@ -59,5 +59,6 @@ function Register() {
     </div>
   );
 }
+
 
 export default Register;

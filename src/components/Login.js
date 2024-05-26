@@ -30,7 +30,7 @@ function Login() {
   };
 
   return (
-    <div>
+    <div className="login">
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <label>
@@ -49,5 +49,4 @@ function Login() {
     </div>
   );
 }
-
 export default Login;

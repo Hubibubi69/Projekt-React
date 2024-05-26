@@ -115,7 +115,7 @@ useEffect(() => {
   };
 
   return (
-    <div>
+    <div className="admin-panel">
       <h2>Admin Panel</h2>
       <h3>Manage Users</h3>
       <ul>
@@ -175,5 +175,6 @@ useEffect(() => {
     </div>
   );
 }
+
 
 export default Admin;

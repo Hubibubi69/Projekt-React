@@ -1,21 +1,131 @@
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
 }
 
-nav ul {
+h1, h2, h3 {
+  color: #333;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.navbar ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav ul li {
+.navbar ul li {
   display: inline;
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
-form {
-  margin: 20px 0;
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
 }
 
-label {
-  margin-right: 10px;
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.home, .register, .login, .change-password, .admin-panel, .calendar {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form input {
+  width: calc(100% - 20px);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 0.7rem 1.5rem;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+.admin-panel ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.admin-panel ul li {
+  margin-bottom: 2rem;
+}
+
+.admin-panel input {
+  width: calc(100% - 20px);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.admin-panel button {
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.admin-panel button:hover {
+  background-color: #555;
+}
+
+.calendar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.calendar ul li {
+  margin-bottom: 1rem;
+}
+
+.calendar input {
+  width: calc(100% - 20px);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.calendar button {
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.calendar button:hover {
+  background-color: #555;
 }

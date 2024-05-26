@@ -18,7 +18,7 @@ function Home() {
   };
 
   return (
-    <div>
+    <div className="home">
       <h1>Welcome to Car Rental Service</h1>
       {user ? <h1>Hello, {user.nickname}!</h1> : null}
       {user && user.nickname === 'admin' && (
