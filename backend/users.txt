@@ -1,0 +1,2 @@
+{"nickname":"admin","email":"admin@example.com","password":"admin","rentedCars":[],"balance":"100"}
+{"nickname":"nothing","email":"thisnothing@gmail.com","password":"zaq1","balance":0,"rentedCars":[]}
